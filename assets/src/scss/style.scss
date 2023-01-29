@@ -1,0 +1,303 @@
+@import url(https://fonts.google.com/specimen/Roboto);
+@import "variables";
+@import "extend";
+@import "mixin";
+@import "navegador";
+@import "footer";
+@import "trayectoria";
+@import "marcas";
+@import "destacados";
+@import "cajasproductos";
+@import "cajaproducto";
+@import "medias";
+
+
+
+   * {
+        margin: 0 ;
+        padding: 0 ;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+
+    .principal {
+    background-image: url(../img/background\ con\ gris.png);
+    background-size: cover;
+    background-repeat: repeat;
+    }
+
+    
+    label{
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+/*contacto*/
+
+    .formulario{
+    display: grid;
+    background: $background;
+    box-shadow: $box-shadow;
+    color: white;
+    max-width: 700px;
+    border-radius: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 60px;
+    margin: 10px auto;
+    gap: 10px;
+    grid-template-areas: "titulo   titulo"
+                         "NomApell email"
+                         "tel      asunto"
+                         "mensaje  mensaje"
+                         "btn      btn"
+                         ;
+
+                 h2{
+                font-size: 40px;
+                margin: 20px;
+                }
+                label{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    margin: 10px;
+                    font-size: 25px;
+
+                    input, textarea{
+                        background-color: transparent;
+                        border: 0;
+                        border-bottom: 1px solid white;
+                        color: white;
+                        margin: 10px;
+                    }
+                }
+                
+
+                        
+    }
+
+
+     
+    .formulario h2:nth-child(1){
+        grid-area: titulo;
+    }
+
+    .formulario label:nth-child(2){
+        grid-area: NomApell;
+    }
+
+    .formulario label:nth-child(3){
+        grid-area: email;
+    }
+
+    .formulario label:nth-child(4){
+        grid-area: tel;
+    }
+
+    .formulario label:nth-child(5){
+        grid-area: asunto;
+    }
+
+    .formulario label:nth-child(6){
+        grid-area: mensaje;
+    }
+
+    .formulario button:nth-child(7){
+        grid-area: btn;
+        border: 0;
+        border-radius: 5px;
+        font-size: 25px;
+    }
+
+
+    /* inicio*/
+
+    main{
+        margin-bottom: 40px;
+    }
+
+    .baseindex {
+        margin-top: 230px;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+    }
+
+    .tituloindex{
+        margin: 10px;
+        padding: 0px;
+        font-size: 50px;
+    }
+
+    .subtituloindex{
+        padding-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .botonindex{
+        text-align: center;
+        display: block;
+        padding: 2px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        background: $background;
+        box-shadow: $box-shadow;
+        background-size: cover;
+    }
+
+
+ 
+/*PRODUCTOS*/
+
+.TituloProductos{
+    color: white;
+    margin: 40px;
+    border: 10px;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+
+/*registro*/
+
+.RegistroCaja{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Tablaregistro{
+    width: 600px;
+    text-align: center;
+    margin: 50px;
+    color: white;
+    padding: 10px;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0px 4px 16px rgba(0,0,0,0.5);
+    background-size: cover;
+    font-size: large;
+}
+
+
+.formregistro{
+    border: 1px solid;
+    padding: 10px;    
+}
+
+.input{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: $box-shadow;
+    background-size: cover;
+    text-align: center;
+    font-size: 16px;
+}
+
+.input__button{
+    background: rgba(255, 255, 255, 0.2);
+    background-size: cover;
+    text-align: center;
+    font-size: 14px;
+    width: 150px;
+    height: 30px;
+    color: white;
+}
+
+::placeholder{
+    color: white;
+}
+
+/*login*/
+
+.LoginCaja{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Tablalogin{
+    width: 600px;
+    text-align: center;
+    margin: 50px;
+    color: white;
+    padding: 10px;
+    background: $background;
+    box-shadow: $box-shadow;
+    background-size: cover;
+    font-size: large;
+}
+
+.formlogin{
+    border: 1px solid;
+    padding: 10px;   
+}
+
+/*nosotros*/
+
+.NosotrosCaja{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Nosotros{
+    width: 900px;
+    height: 500px;
+    padding: 10px;
+    margin: 50px;
+    background: $background;
+    box-shadow: $box-shadow;
+    background-size: cover;
+    position: absolute;
+    text-align: center;
+
+}
+
+.Nosotros__Titulo{
+    color: white;
+    text-align: left;
+    font-size: 40px;
+    margin-left: 7px;
+}
+
+.Nosotros__Desc{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.Nosotros__Desc2{
+    color: white;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 170px;
+}
+
+.Nosotros__Desc3{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    margin: 25px;
+    max-width: 430px;
+}
+
+.mapa{
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+    margin-left: 35px;
+    top: 225px;
+    position: absolute;
+}
+
+
+
+
+@import "medias";

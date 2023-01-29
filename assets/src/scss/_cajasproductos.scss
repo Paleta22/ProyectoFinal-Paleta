@@ -1,0 +1,46 @@
+
+
+.tarjetas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: stretch;
+    row-gap: 10px;
+    margin: 30px;
+}
+
+.tarjeta{
+    
+    width: 290px;
+    @include caja_productos($background);
+
+}
+.tarjeta__img{
+    width: 100%;
+    
+}
+.tarjeta__titulo{
+    margin: 8px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.tarjeta__desc{
+    margin: 10px;
+}
+
+
+.tarjeta__btn{
+
+    @extend %tarjetabtn;
+
+    &:hover{
+        background-image: url(../img/ocean\ logo.png);
+        color: white;
+    }
+}
+
+.tarjeta__titulo--coloroferta{
+    color: red;
+    margin: 8px;
+}

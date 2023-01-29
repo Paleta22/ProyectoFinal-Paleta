@@ -1,0 +1,9 @@
+@mixin caja_productos ($background){
+    border: solid 2px;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    display: inline-block;
+    background: $background;
+    background-size: cover;
+}

@@ -1,0 +1,45 @@
+.navegador{
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/fondosincosas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+}
+
+.navegador ul li {
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px;
+    font-size: large;
+}
+
+.navegador ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navegar {
+    position: relative;
+    top: 22px;
+    right: 20px;
+    text-align: center;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.TituloNav{
+color: black;
+top: 16px;
+position: relative;
+text-align: center;
+font-weight: bold;
+font-size: 25px;
+}
+
+.efectonav{
+background: rgba(0,0,0,0.2);border-radius: 2px; padding-left: 10px;padding-right: 10px; font-size: 21px; padding-bottom: 2px;
+}
